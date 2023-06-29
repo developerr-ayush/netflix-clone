@@ -1,0 +1,29 @@
+{
+  "name": "gulp-setup",
+  "version": "1.0.0",
+  "description": "basic setup for gulp",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker#v9.0.1",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.24",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-sharp-optimize-images": "^2.0.2",
+    "gulp-uncss": "^1.0.6"
+  }
+}

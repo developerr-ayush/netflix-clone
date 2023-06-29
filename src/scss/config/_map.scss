@@ -1,0 +1,58 @@
+$colors: (
+  // Base Colors
+  "base": hsl(0 0% 0%),
+  "primary": hwb(357 4% 10%),
+  "secondary": hsl(50 90% 55%),
+  // Shades
+  "light": hsl(0 0% 100%),
+  "dark": hsl(0 0% 20%),
+  "accent": hsl(48 100% 50%),
+  // Semantic Colors
+  "success": hsl(120 100% 40%),
+  "warning": hsl(36 100% 50%),
+  "error": hsl(0 100% 50%),
+  "info": hsl(204 100% 50%),
+  // Functional Colors
+  "body": hsl(0 0% 0%),
+  "text": hsl(0 0% 100%),
+  "heading": hsl(0 0% 100%),
+  // Neutral Colors
+  "black": hsl(0 0% 0%),
+  "white": hsl(0 0% 100%),
+  "gray": hsl(0 0% 50%),
+  "silver": hsl(0 0% 75%)
+);
+
+$breakpoints: (
+  xs: 300px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$container: (
+  xs: calc(100% - 4.8rem),
+  sm: 54rem,
+  md: 72rem,
+  lg: 96rem,
+  xl: 104rem,
+  2xl: 132rem,
+);
+$spacing: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: inline,
+  y: block,
+);
+
+$fonts: (
+  NetflixSans: (
+    NetflixSans-Light: 300,
+    NetflixSans-Regular: 400,
+    NetflixSans-Medium: 500,
+    NetflixSans-Bold: 700,
+  ),
+);
