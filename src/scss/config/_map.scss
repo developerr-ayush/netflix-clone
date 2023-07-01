@@ -1,7 +1,8 @@
 $colors: (
   // Base Colors
   "base": hsl(0 0% 0%),
-  "primary": hwb(357 4% 10%),
+  "primary": hsl(357, 92%, 47%),
+  "primary-dark": hsl(357, 88%, 41%),
   "secondary": hsl(50 90% 55%),
   // Shades
   "light": hsl(0 0% 100%),
@@ -20,6 +21,7 @@ $colors: (
   "black": hsl(0 0% 0%),
   "white": hsl(0 0% 100%),
   "gray": hsl(0 0% 50%),
+  "dark-gray": hsl(0, 0%, 14%),
   "silver": hsl(0 0% 75%)
 );
 

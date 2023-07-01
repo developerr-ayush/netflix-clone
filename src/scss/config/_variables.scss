@@ -1,7 +1,7 @@
 @use "map" as *;
 @use "mixin" as *;
 
-$font-primary: "NetflixSans", sans-serif;
+$font-primary: "Segoe UI", "NetflixSans", sans-serif;
 $font-icon: "custom-icons";
 $grid-columns: 12; // max grid columns
 $base-space: 0.5rem; //5px
@@ -25,4 +25,5 @@ $max-space: 6; // this is maximun number for creating of spacing variables, marg
       }
     }
   }
+  
 }
