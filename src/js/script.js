@@ -26,3 +26,8 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+document.querySelectorAll(".accordian-header").forEach(element => {
+    element.addEventListener('click', e => {
+        element.parentElement.classList.toggle("active")
+    })
+})

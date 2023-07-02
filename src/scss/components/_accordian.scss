@@ -1,0 +1,67 @@
+@use "../config/" as *;
+.accordian {
+  &-header {
+    background-color: var(--dark-gray);
+    transition: 0.2s;
+    h5 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 400;
+      @include mq(md) {
+        font-size: 2.4rem;
+      }
+    }
+    &:hover {
+      background-color: hsl(0, 0%, 30%);
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  &-button {
+    padding: var(--space-3);
+    gap: var(--space-2);
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+      font-size: 2rem;
+      transition: 0.3s;
+      font-weight: 400;
+      @include mq(md) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+  &-wrap {
+    overflow: hidden;
+    min-height: 0;
+    background-color: var(--dark-gray);
+    p {
+      padding: var(--space-3);
+    }
+  }
+  &-body {
+    margin-top: var(--space-2);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s;
+    overflow: hidden;
+    @include mq(md) {
+      margin-top: var(--space-1);
+    }
+  }
+  &-item {
+    margin-block: var(--space-3);
+  }
+  .active {
+    .accordian-body {
+      grid-template-rows: 1fr;
+    }
+    .icon {
+      transform: rotate(45deg);
+    }
+  }
+}

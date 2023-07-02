@@ -1,0 +1,54 @@
+@use "../config/" as *;
+.download {
+  border: 0.2rem solid var(--gray);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  width: 65%;
+  margin: auto;
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--body);
+  @include mq(md) {
+    width: 55%;
+    padding-inline: var(--space-2);
+  }
+  &-content {
+    margin-right: auto;
+    text-align: left;
+  }
+  &-img {
+    margin-right: var(--space-2);
+    @include mq(md) {
+      margin-right: var(--space-4);
+    }
+    img {
+      height: 4rem;
+      width: auto;
+      @include mq(md) {
+        height: 7rem;
+      }
+    }
+  }
+  &-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  h4 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  p {
+    margin-bottom: 0;
+    color: var(--info);
+    font-size: 1.2rem;
+    @include mq(md) {
+      font-size: 1.4rem;
+    }
+  }
+}

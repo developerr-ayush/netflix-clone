@@ -27,5 +27,8 @@
   &:focus {
     outline: 1px solid var(--dark);
   }
+  @include mq(md) {
+    font-weight: 700;
+  }
 }
 //   animation efflect

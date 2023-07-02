@@ -70,6 +70,11 @@ function copyImages() {
 function cleanImages() {
   return src("public/images", { allowEmpty: true }).pipe(clean());
 }
+function copyVideos() {
+  return src("src/videos/**/*", { allowEmpty: true }).pipe(
+    dest("public/videos")
+  );
+}
 
 function fontTask() {
   return src("src/fonts/*").pipe(dest("public/fonts"));
@@ -101,6 +106,7 @@ export default series(
   jsTask,
   fontTask,
   imgTask,
+  copyVideos,
   copyImages,
   cleanImages,
   browsersyncServe,
@@ -117,6 +123,7 @@ export const build = series(
   jsTask,
   fontTask,
   imgTask,
+  copyVideos,
   copyImages,
   cleanImages
 );
